@@ -28,7 +28,7 @@ export const ShowCard = ({ show }) => {
                             <p className="venue">{show.venue}</p>
                             <p className="log">Notes: {show.log}</p>
 
-                            <button onClick={() =>
+                            <button id="edit-button" onClick={() =>
                                 navigate(`/myshows/edit/${show.id}`)}>Edit show</button>
                         </div>
                

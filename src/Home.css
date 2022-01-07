@@ -18,7 +18,7 @@
 
 .welcome {
     color: white;
-    padding-top: 8%;
+    padding-top: 9%;
     text-align: center
 }
 
@@ -30,8 +30,6 @@
 
  #homepage_container {
     background-color: black;
-    justify-content: center;
-    
-
-    
+    justify-content: center; 
 } 
+

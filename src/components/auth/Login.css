@@ -1,0 +1,45 @@
+
+
+.link--register{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.form--login{ 
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.login-welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.login-plz-sign-in{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.email-input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.sign-in-button{
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+    height: 5vh;
+    align-items: center;
+}
+
+.email.form-control{
+    align-self:baseline
+}
+

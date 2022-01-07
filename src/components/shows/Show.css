@@ -7,7 +7,7 @@
     /* margin: 2%; */
     width: 100%;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
-    background-color: rgb(233, 231, 224);
+    background-color: rgb(255, 252, 250);
     border-radius: 25px;
 }
 
@@ -26,6 +26,7 @@ body  {
 
 button {
 
+    background-color: rgb(255, 229, 144);
     display: flex;
     justify-content: center;
     transition-duration: 0.3s;
@@ -77,15 +78,15 @@ button:hover {
     position: sticky;
     top:0;
     background-color: rgba(0, 0, 0, 0.596);
-    height: 20vh;
+    height: 21vh;
    
 }
  .show_search {
       display: flex;
       justify-content: center;
-      color: white;
+      color: rgb(255, 255, 255);
       margin-bottom: 1%;
-      margin-left: 25%;
+      margin-left: 15%;
       width: 50vw
      
       
@@ -95,6 +96,7 @@ button:hover {
      justify-self: center;
      width: 25vw;
      height: 8vh;
+     padding-left: 2%
  }
 
  #add-show {
@@ -108,11 +110,12 @@ button:hover {
  .your-shows {
     
      color: white;
+    
  }
 
  .your-shows-container{
     display: flex;
-    padding-top: 6%;
+    padding-top: 5%;
     padding-bottom: 2%;
     margin-left: 4%;
     justify-content: left;
@@ -142,7 +145,7 @@ button:hover {
 .col {
 
     padding-top: 5%;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.548);
     color: black;
     display: flex;
     flex-direction: column;

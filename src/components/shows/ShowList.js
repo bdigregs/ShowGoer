@@ -77,7 +77,7 @@ export const ShowList = () => {
                                             )
                                     }
                                     )}
-    }
+    {"}"}
                             </div>
                         </Col>
                         <Col>

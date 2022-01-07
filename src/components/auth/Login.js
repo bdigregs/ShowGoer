@@ -40,18 +40,15 @@ export const Login = (props) => {
 
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>ShowGoer</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                    <h1 className="login-welcome">ShowGoer</h1>
+                    <h2 className="login-plz-sign-in">Please sign in</h2>
+                    <fieldset className="email-input">
+                       
                         <input ref={email} type="email"
                             id="email"
                             className="form-control"
                             placeholder="Email address"
-                            required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit">
+                            required autoFocus /> <button className="sign-in-button" type="submit">
                             Sign in
                         </button>
                     </fieldset>

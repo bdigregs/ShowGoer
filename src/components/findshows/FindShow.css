@@ -12,7 +12,7 @@
     justify-content: center;
     color: white;
     margin-bottom: 2%;
-    padding-top: 8%
+    padding-top: 6%
 
 }
 
@@ -26,7 +26,7 @@
 
 }
 
-#findshow-sticky{
+.findshow-sticky{
     position: sticky;
     top:0;
     background-color: rgba(0, 0, 0, 0.507)
@@ -36,13 +36,15 @@
 .findshows-container {
     display: flex;
 
+
 }
 
 .card-img-top {
+   align-self: center;
    max-width: 30vw;
    max-height: 30vh;
    margin-bottom: 5%;
-   border: 5px solid yellow
+   border: 5px solid rgb(255, 229, 144)
 }
 
 .card-body {
@@ -76,8 +78,8 @@ button:hover {
       display: flex;
       width: 30vw;
       height: 90vh;
-    padding: 2%;
-    margin: 3%;
+    padding: 1%;
+    margin: 1%;
     border-color: black;
     border-style: solid;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
