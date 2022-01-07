@@ -57,7 +57,7 @@
 
 .card-title{
     display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 2%
 }
 
@@ -78,12 +78,14 @@ button:hover {
 
   .card {
       display: flex;
+      max-width: 100%;
+      max-height: 100%;
       width: 28vw;
       height: 90vh;
     padding: 1%;
     margin: 1%;
     border-color: black;
-    border-style: solid;
+    border-width: 5px;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
     background-image: url("https://img.freepik.com/free-vector/wave-textures-white-background-vector_53876-60286.jpg?size=626&ext=jpg")
     
@@ -92,6 +94,7 @@ button:hover {
   .card-text{
       margin: 2%;
       font-weight: bold;
+      text-align: center;
 
       
   }
