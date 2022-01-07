@@ -35,7 +35,7 @@ export const ShowList = () => {
 
     return (
 
-        <>
+        <div className="my-shows">
 
 
             <div className="sticky-header">
@@ -77,7 +77,7 @@ export const ShowList = () => {
                                             )
                                     }
                                     )}
-    }
+    {"}"}
                             </div>
                         </Col>
                         <Col>
@@ -87,7 +87,7 @@ export const ShowList = () => {
                                 {
 
                                     filteredShows.sort((a, b) => {
-                                        return new Date(b.date) - new Date(a.date)
+                                        return new Date(a.date) - new Date(b.date)
                                     }).map(show => {
 
                                         if (Date.now() < Date.parse(show.date))
@@ -108,7 +108,7 @@ export const ShowList = () => {
 
             </div>
 
-        </>
+        </div>
     )
 }
 

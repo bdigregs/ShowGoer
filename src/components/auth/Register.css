@@ -1,0 +1,10 @@
+.form--login{
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 5%;
+  
+}
+
+.name-input, .email-input{
+    display: flex;
+    justify-content: center;
+}

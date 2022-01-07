@@ -7,13 +7,14 @@
     /* margin: 2%; */
     width: 100%;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
-    background-color: rgb(233, 231, 224);
+    background-color: rgb(255, 252, 250);
+    background-image: url("https://img.freepik.com/free-vector/wave-textures-white-background-vector_53876-60286.jpg?size=626&ext=jpg");
     border-radius: 25px;
 }
 
 
 
-body  {
+.my-shows  {
     background-image: url("https://hotelcongress.com/wp-content/uploads/2018/12/JST21952_sized.jpg");
     background-repeat: repeat;
     background-size: cover;
@@ -26,6 +27,7 @@ body  {
 
 button {
 
+    background-color: rgb(255, 229, 144);
     display: flex;
     justify-content: center;
     transition-duration: 0.3s;
@@ -55,12 +57,13 @@ button:hover {
 
 .date, .city, .state, .venue {
       display: flex;
-      justify-content: left;
+      justify-content: center;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   .log {
       font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.705);
       
   }
 
@@ -77,15 +80,15 @@ button:hover {
     position: sticky;
     top:0;
     background-color: rgba(0, 0, 0, 0.596);
-    height: 20vh;
+    height: 21vh;
    
 }
  .show_search {
       display: flex;
       justify-content: center;
-      color: white;
+      color: rgb(255, 255, 255);
       margin-bottom: 1%;
-      margin-left: 25%;
+      margin-left: 15%;
       width: 50vw
      
       
@@ -95,6 +98,7 @@ button:hover {
      justify-self: center;
      width: 25vw;
      height: 8vh;
+     padding-left: 2%
  }
 
  #add-show {
@@ -108,11 +112,12 @@ button:hover {
  .your-shows {
     
      color: white;
+    
  }
 
  .your-shows-container{
     display: flex;
-    padding-top: 6%;
+    padding-top: 5%;
     padding-bottom: 2%;
     margin-left: 4%;
     justify-content: left;
@@ -142,7 +147,7 @@ button:hover {
 .col {
 
     padding-top: 5%;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.548);
     color: black;
     display: flex;
     flex-direction: column;
@@ -155,6 +160,12 @@ button:hover {
     margin: 1%;
     width: 45%;
     height: 45%
+}
+
+#edit-button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -211,3 +222,4 @@ label {
     justify-content: center;
     margin-left: 5%
 }
+

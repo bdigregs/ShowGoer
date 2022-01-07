@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import "./Register.css"
 
 export const Register = (props) => {
     const firstName = useRef()
@@ -60,11 +61,11 @@ export const Register = (props) => {
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for ShowGoer</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
-                    <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
+                    <input className="name-input" ref={firstName} type="text" name="firstName"  placeholder="First name" required autoFocus />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
-                    <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
+                    <input className="email-input" ref={email} type="email" name="email"  placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Sign in </button>
