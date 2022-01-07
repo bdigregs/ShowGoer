@@ -57,12 +57,13 @@ button:hover {
 
 .date, .city, .state, .venue {
       display: flex;
-      justify-content: left;
+      justify-content: center;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   .log {
       font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.705);
       
   }
 
@@ -161,6 +162,12 @@ button:hover {
     height: 45%
 }
 
+#edit-button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* Form /////////// */
 label {
@@ -215,3 +222,4 @@ label {
     justify-content: center;
     margin-left: 5%
 }
+

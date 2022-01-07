@@ -14,24 +14,37 @@
 
 .home_text {
     color: white;
+    outline: black;
     text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    /* padding-top: 1%; */
+    padding-bottom: 5%;
     font-style: bold;
     font-size: large;
     font-style: italic;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
 }
 
 .welcome {
     color: white;
     padding-top: 6%;
-    text-align: center
+    text-align: center;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
 }
 
 #container_heading {
-    padding: 1%;
+    /* padding: 1%; */
     color: white;
-    text-align: center
+    text-align: center;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
 }
 
  #homepage_container {

@@ -13,6 +13,16 @@ export const FindShowList = () => {
 
     const [searchTerm, setSearchTerm] = useState("")
 
+  
+    //Trying to make Enter work
+    // const handleKeypress = e => {
+    //     if (e.keyCode === 13) {
+         
+    //         getFindShowsCity(searchTerm)
+    //         getFindShows(searchTerm)
+    //         console.log(searchTerm);
+    //     }
+    // }
 
     const handleControlledInputChange = (props) => {
 
