@@ -41,7 +41,7 @@ export const Login = (props) => {
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1 className="login-welcome">ShowGoer</h1>
-                    <h2 className="login-plz-sign-in">Please sign in</h2>
+                    <h3 className="login-plz-sign-in">Please sign in</h3>
                     <fieldset className="email-input">
                        
                         <input ref={email} type="email"

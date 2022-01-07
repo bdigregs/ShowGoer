@@ -35,7 +35,7 @@ export const ShowList = () => {
 
     return (
 
-        <>
+        <div className="my-shows">
 
 
             <div className="sticky-header">
@@ -108,7 +108,7 @@ export const ShowList = () => {
 
             </div>
 
-        </>
+        </div>
     )
 }
 
