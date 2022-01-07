@@ -78,6 +78,15 @@
       "venue": "KFC Yum! Center",
       "log": "",
       "userId": 1
+    },
+    {
+      "artist": "Mountain Stage",
+      "date": "2022-01-16",
+      "city": "Morgantown",
+      "state": "West Virginia",
+      "venue": "Lyell B Clay Concert Theatre",
+      "userId": 1,
+      "id": 34
     }
   ],
   "logs": [
