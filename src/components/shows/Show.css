@@ -1,0 +1,213 @@
+.show-card {
+   flex-wrap: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    border-style: solid;
+    padding: 4%;
+    /* margin: 2%; */
+    width: 100%;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+    background-color: rgb(233, 231, 224);
+    border-radius: 25px;
+}
+
+
+
+body  {
+    background-image: url("https://hotelcongress.com/wp-content/uploads/2018/12/JST21952_sized.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    position: absolute;
+    overflow-y:scroll;
+}
+
+button {
+
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.3s;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+  
+button:hover {
+    background-color: #a80000; ;
+    color: rgb(231, 180, 40);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+ 
+
+
+
+  .artist{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2%;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+.date, .city, .state, .venue {
+      display: flex;
+      justify-content: left;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .log {
+      font-weight: bold;
+      
+  }
+
+
+
+ .upcoming-shows {
+     display: flex;
+     justify-content: right;
+    
+ }
+
+ /* //Sticky header */
+ .sticky-header{
+    position: sticky;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 20vh;
+   
+}
+ .show_search {
+      display: flex;
+      justify-content: center;
+      color: white;
+      margin-bottom: 1%;
+      margin-left: 25%;
+      width: 50vw
+     
+      
+  }
+ .input--wide {
+     display: flex;
+     justify-self: center;
+     width: 25vw;
+     height: 8vh;
+ }
+
+ #add-show {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 8%;
+   
+  
+}
+ .your-shows {
+    
+     color: white;
+ }
+
+ .your-shows-container{
+    display: flex;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    margin-left: 4%;
+    justify-content: left;
+
+ }
+
+ 
+ #upcoming-header{
+     display: flex;
+     justify-content: center;
+     color: white;
+     
+  
+ }
+
+ #past-header {
+    display: flex;
+    justify-content: center;
+    color: white;
+ }
+
+.scroll-show{
+    height: 100vh;
+    overflow-y:scroll;
+}
+
+.col {
+
+    padding-top: 5%;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-style: solid;
+    padding: 2%;
+    margin: 1%;
+    padding: 2%;
+    margin: 1%;
+    width: 45%;
+    height: 45%
+}
+
+
+/* Form /////////// */
+label {
+    color: white;
+    font-weight: bold;
+    padding: 2%
+  
+
+}
+
+.form_group {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.form-control{
+    height:8vh;
+    width: 20vw;
+
+}
+
+#log.form-control{
+    width: 50vw;
+    height: 20vh;
+}
+
+#artist.form-control{
+    margin-top: 2%;
+}
+
+.form-background {
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.saveShow, .deleteShow, .cancelShow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh
+
+}
+
+#state {
+    margin-left: 8%;
+    text-align: center;
+    height: 5vh;
+}
+
+.form-buttons{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%
+}

@@ -1,0 +1,161 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Brandon",
+      "email": "brandon@showgoer.com"
+    },
+    {
+      "id": 2,
+      "name": "Curly Stevenson",
+      "email": "curly@showgoer.com"
+    }
+  ],
+  "shows": [
+    {
+      "id": 1,
+      "artist": "Sgt Pepper's Lonely Hearts Club Band",
+      "date": "2021-12-25",
+      "city": "Charleston",
+      "state": "West Virginia",
+      "venue": "The Empty Glass",
+      "log": "A throwback show for sure!",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "artist": "John Denver",
+      "date": "2021-12-16",
+      "city": "Charleston",
+      "state": "West Virginia",
+      "venue": "The Clay Center",
+      "log": "Mountain Mama, y'all",
+      "userId": 1
+    },
+    {
+      "artist": "Coheed and Cambria - The Great Destroyer Tour",
+      "date": "2022-02-20",
+      "city": "Tucson",
+      "state": "",
+      "venue": "Rialto Theatre-Tucson",
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "id": 19,
+      "artist": "The Splendor of Brahms : Tucson Symphony Orchestra",
+      "date": "2022-03-18",
+      "city": "Tucson",
+      "state": "Arizona",
+      "venue": "Tucson Music Hall",
+      "userId": 1
+    },
+    {
+      "artist": "Koo Koo Kanga Roo",
+      "date": "2022-03-06",
+      "city": "Seattle",
+      "state": "",
+      "venue": "Madame Lou's",
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "artist": "Morgan Wallen: The Dangerous Tour",
+      "date": "2022-02-04",
+      "city": "Charleston",
+      "state": "",
+      "venue": "Charleston Coliseum & Convention Center",
+      "userId": 1,
+      "id": 22
+    },
+    {
+      "id": 23,
+      "artist": "The Kenny Wayne Shepherd Band",
+      "date": "2022-03-06",
+      "city": "Tucson",
+      "state": "Arizona",
+      "venue": "Rialto Theatre-Tucson",
+      "userId": 1
+    },
+    {
+      "id": 25,
+      "artist": "The Story So Far",
+      "date": "2022-04-20",
+      "city": "Baltimore",
+      "state": "Maryland",
+      "venue": "Rams Head Live",
+      "userId": 1
+    },
+    {
+      "artist": "Imagine Dragons: Mercury World Tour",
+      "date": "2022-02-06",
+      "city": "Miami",
+      "venue": "FTX Arena (formerly AmericanAirlines Arena)",
+      "userId": 1,
+      "id": 26
+    },
+    {
+      "id": 27,
+      "artist": "Shinedown: The Revolution's Live Tour",
+      "date": "2022-04-22",
+      "city": "Charleston",
+      "state": "West Virginia",
+      "venue": "Charleston Coliseum & Convention Center",
+      "userId": 1
+    },
+    {
+      "artist": "Mötley Crüe/Def Leppard/Poison/Joan Jett and the Blackhearts",
+      "date": "2022-08-12",
+      "city": "Pittsburgh",
+      "state": "Pennsylvania",
+      "venue": "PNC Park",
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "artist": "Morgan Wallen: The Dangerous Tour",
+      "date": "2022-02-04",
+      "city": "Charleston",
+      "state": "West Virginia",
+      "venue": "Charleston Coliseum & Convention Center",
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "artist": "Tool",
+      "date": "2022-01-11",
+      "city": "Tacoma",
+      "state": "Washington",
+      "venue": "Tacoma Dome",
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "artist": "Putnam County Pickers",
+      "date": "2022-01-04",
+      "city": "Charleston",
+      "state": "West Virginia",
+      "venue": "Mountain Stage",
+      "log": "A full-blown bluegrass explosion.",
+      "userId": 1,
+      "id": 32
+    },
+    {
+      "artist": "Billie Eilish: Happier Than Ever, The World Tour",
+      "date": "2022-03-11",
+      "city": "Louisville",
+      "state": "Kentucky",
+      "venue": "KFC Yum! Center",
+      "userId": 1,
+      "id": 33
+    }
+  ],
+  "logs": [
+    {
+      "id": 1,
+      "name": "A throwback show",
+      "userId": 1,
+      "showId": 1
+    }
+  ]
+}

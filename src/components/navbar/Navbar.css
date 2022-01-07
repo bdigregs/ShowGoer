@@ -1,0 +1,50 @@
+/* .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+.navbar__item_active {
+    flex-basis: 20%;
+    justify-content: space-between
+}
+
+.navbar_link {
+    justify-content: space-between;
+    padding-left: 5px
+    
+} */
+
+.justify-content-end {
+    justify-content: right
+}
+
+/* img {
+    display: flex;
+    width: 50%;
+} */
+
+.nav-link{
+    justify-content: space-between
+}
+
+.navbar {
+   
+    height: 10vh;
+ 
+    
+}
+
+
+
+.navbar-brand
+{
+    position: relative;
+    background: url("../../ShowGoerLogo.png");
+    width: 190px;
+    height: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
