@@ -84,7 +84,8 @@ button:hover {
     position: sticky;
     top:0;
     background-color: rgba(0, 0, 0, 0.596);
-    height: 21vh;
+    height: 24vh;
+    padding-top: 1%
    
 }
  .show_search {

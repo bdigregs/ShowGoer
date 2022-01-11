@@ -25,7 +25,7 @@ export const GalleryList = () => {
 
 
 return (
-    <div>
+    <div className="gallery-background">
         <div>
             <input type="file" onChange= {(e) => setImage(e.target.files[0])}></input>
             <button className="gallery-upload" onClick={uploadImage}>Upload</button>

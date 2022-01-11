@@ -4,5 +4,15 @@
 }
 
 .gallery-header{
-    margin-top: 10%
+    margin-top: 10%;
+    color: white;
+}
+
+.gallery-background{
+    background-image: url("https://bloximages.newyork1.vip.townnews.com/herald-dispatch.com/content/tncms/assets/v3/editorial/6/b2/6b2272ef-c4d9-520d-aaf2-46c5017f1aeb/60dcc855dc517.image.jpg?resize=1200%2C798");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-y: scroll; 
 }

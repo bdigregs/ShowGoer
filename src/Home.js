@@ -41,7 +41,7 @@ export const Home = () => (
     </a>
     <div className="news-card-body">
       <h5 className="news-card-title">Rolling Stone</h5>
-      <p className="news-card-text">Read everything about music, film, TV, interviews, and political news.</p>
+      <p className="news-card-text">Read everything about music, film, TV, interviews, and politics.</p>
     </div>
   </div>
 </div>

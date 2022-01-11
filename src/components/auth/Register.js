@@ -58,17 +58,17 @@ export const Register = (props) => {
             </dialog>
 
             <form className="register-form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for ShowGoer</h1>
+                <h1 className="please-register">Please Register for ShowGoer</h1>
                 <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
-                    <input className="name-input" ref={firstName} type="text" name="firstName"  placeholder="First name" required autoFocus />
+                    <label htmlFor="firstName"> Name </label>
+                    <input className="name-input" ref={firstName} type="text" name="firstName"  placeholder="Name" required autoFocus />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
                     <input className="email-input" ref={email} type="email" name="email"  placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Sign in </button>
+                    <button className="sign-in" type="submit"> Sign in </button>
                 </fieldset>
             </form>
         </main>

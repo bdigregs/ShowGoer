@@ -57,7 +57,7 @@
       "city": "Tacoma",
       "state": "Washington",
       "venue": "Tacoma Dome",
-      "log": "It was quite stressful to fly to Tacoma and come back within 24 hours",
+      "log": "It was quite stressful to fly to Tacoma and back within 24 hours",
       "userId": 1
     },
     {
@@ -136,13 +136,14 @@
       "id": 39
     },
     {
+      "id": 40,
       "artist": "Bikini Kill",
       "date": "2022-05-02",
       "city": "Tucson",
       "state": "Arizona",
       "venue": "Rialto Theatre-Tucson",
-      "userId": 1,
-      "id": 40
+      "log": "Badass",
+      "userId": 1
     }
   ],
   "logs": [
@@ -159,6 +160,14 @@
       "caption": "",
       "userId": 1,
       "imageUrl": ""
+    },
+    {
+      "userId": null,
+      "id": 2
+    },
+    {
+      "userId": null,
+      "id": 3
     }
   ]
 }

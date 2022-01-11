@@ -12,7 +12,7 @@ export const Gallery = (props) => {
         data.append("file", image)
         data.append("upload_preset", "tutorial")
         data.append("cloud_name", "dtmiilpg4")
-        fetch("https://api.cloudinary.com/v1_1/dtmiilpg4/image/upload", {
+        fetch("https://api.cloudinary.com/v1_1/dtmiilpg4", {
 
         method: "POST",
         body: data
@@ -26,14 +26,14 @@ export const Gallery = (props) => {
 
 
     const getPics = () => {
-        return fetch("http://localhost:8088/gallery")
+        return fetch("https://api.cloudinary.com/v1_1/dtmiilpg4")
         .then(res => res.json())
         .then(setImage)
     }
 
 
     const addPic = picObj => {
-        return fetch("http://localhost:8088/gallery", {
+        return fetch("https://api.cloudinary.com/v1_1/dtmiilpg4/image/upload", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -45,17 +45,29 @@ export const Gallery = (props) => {
 }
 
 
-const handleClickSavePic = (event) => {
-    event.preventDefault()
+return ( 
+    <GalleryContext.Provider value={{ 
+        image, setImage, url, setUrl, addPic, uploadImage, getPics
+    }}>
+        {props.children}
+    </GalleryContext.Provider>
+)
 
-    const newPic = {
-        caption: image.caption,
-        imageUrl: image.imageUrl,
-        userId: parseInt(image.userId)
-
-    }
-    addPic(newPic)
 }
+
+export default Gallery;
+
+// const handleClickSavePic = (event) => {
+//     event.preventDefault()
+
+//     const newPic = {
+//         caption: image.caption,
+//         imageUrl: image.imageUrl,
+//         userId: parseInt(image.userId)
+
+//     }
+//     addPic(newPic)
+// }
 // return (
 //     <div>
 //         <div>
@@ -69,12 +81,4 @@ const handleClickSavePic = (event) => {
 //         <button onClick={handleClickSavePic}>Add Picture</button>
 //     </div>
 // )
-    return ( 
-        <GalleryContext.Provider value={{ 
-            image, setImage, url, setUrl, addPic, uploadImage, getPics
-        }}>
-            {props.children}
-        </GalleryContext.Provider>
-    )
-
-}
+ 
