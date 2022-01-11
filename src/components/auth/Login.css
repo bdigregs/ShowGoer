@@ -19,6 +19,7 @@ body{
 .container--login{ 
     background-color: rgba(0, 0, 0, 0.555);
     padding: 5%;
+    align-content: center;
  
 }
 
@@ -37,7 +38,7 @@ body{
     margin-bottom: 3%;
 }
 
-.email-input{
+.email{
     display: flex;
     justify-content: center;
     margin-bottom: 1%;
@@ -45,8 +46,7 @@ body{
 }
 
 .sign-in-button{
-    display: flex;
-    justify-content: center;
+    
     margin-left: 1%;
     height: 5vh;
     align-items: center;
@@ -54,6 +54,10 @@ body{
 
 .email.form-control{
     align-self:baseline
+}
+
+.form--login{
+align-content: center;
 }
 
 
