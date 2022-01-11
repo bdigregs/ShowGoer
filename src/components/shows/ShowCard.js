@@ -8,7 +8,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const ShowCard = ({ show }) => {
 
 
-
+    const now = new Date(show.date.replace(/-/g, '\/').replace(/T.+/, ''));
+    const dateString = now.toLocaleDateString({
+      weekday: "short",
+      year: "numeric",
+      month: "2-digit",
+      day: "numeric"
+    })
+    
+    console.log(dateString);
     // moment('20010704T120854').format('MMMM Do YYYY, h:mm:ss a')
 
     const navigate = useNavigate()
@@ -22,11 +30,17 @@ export const ShowCard = ({ show }) => {
                    
                       
                             <h4 className="artist">{show.artist}</h4>
-                            <p className="date">{show.date}</p>
+                            <p className="date">{now.toLocaleDateString({
+                                weekday: "short",
+                                year:  "numeric",
+                                month: "2-digit",
+                                day: "numeric"
+                            })} </p>
                             {/* show time */}
                             <p className="city">{show.city}, {show.state}</p>
                             <p className="venue">{show.venue}</p>
-                            <p className="log">Notes: {show.log}</p>
+                            <p className="notes">Notes:</p>
+                            <p className="log">{show.log}</p>
 
                             <button id="edit-button" onClick={() =>
                                 navigate(`/myshows/edit/${show.id}`)}>Edit show</button>

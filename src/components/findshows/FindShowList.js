@@ -69,7 +69,8 @@ export const FindShowList = () => {
             <div className="input-group">
                 {
                     findShows._embedded?.events.sort((a, b) => {
-                        return new Date(a.date) - new Date(b.date)
+                        return new Date(a.dates.start.localDate) - new Date(b.dates.start.localDate)
+                   
                     }).map(show => {
                         return <FindShowCard key={show.id} show={show} />
                     })

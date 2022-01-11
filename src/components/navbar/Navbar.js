@@ -18,6 +18,7 @@ export const NavBar = (props) => {
                     </li> */}
         <Nav className="me-auto">
           <Nav.Link href="/myshows">My Shows</Nav.Link>
+          <Nav.Link href="/gallery">Gallery</Nav.Link>
           <Nav.Link href="/findshows">Find Shows</Nav.Link>
        
         <Nav className="justify-content-end" activeKey="/home">

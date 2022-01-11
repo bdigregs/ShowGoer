@@ -29,7 +29,7 @@
       "city": "Charleston",
       "state": "West Virginia",
       "venue": "The Clay Center",
-      "log": "Mountain Mama, y'all",
+      "log": "Mountain Mama",
       "userId": 1
     },
     {
@@ -51,13 +51,14 @@
       "id": 30
     },
     {
+      "id": 31,
       "artist": "Tool",
       "date": "2022-01-11",
       "city": "Tacoma",
       "state": "Washington",
       "venue": "Tacoma Dome",
-      "userId": 1,
-      "id": 31
+      "log": "It was quite stressful to fly to Tacoma and come back within 24 hours",
+      "userId": 1
     },
     {
       "artist": "Putnam County Pickers",
@@ -87,6 +88,61 @@
       "venue": "Lyell B Clay Concert Theatre",
       "userId": 1,
       "id": 34
+    },
+    {
+      "artist": "The Splendor of Brahms : Tucson Symphony Orchestra",
+      "date": "2022-03-20",
+      "city": "Tucson",
+      "state": "Arizona",
+      "venue": "Tucson Music Hall",
+      "userId": 1,
+      "id": 35
+    },
+    {
+      "artist": "Imagine Dragons: Mercury World Tour",
+      "date": "2022-03-14",
+      "city": "Phoenix",
+      "state": "Arizona",
+      "venue": "Footprint Center",
+      "userId": 1,
+      "id": 36
+    },
+    {
+      "artist": "Yola",
+      "date": "2022-03-18",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "venue": "The Charleston Music Hall",
+      "userId": 1,
+      "id": 37
+    },
+    {
+      "artist": "Mahler's Vision of Paradise : Tucson Symphony Orchestra",
+      "date": "2022-01-23",
+      "city": "Tucson",
+      "state": "Arizona",
+      "venue": "Tucson Music Hall",
+      "userId": 1,
+      "id": 38
+    },
+    {
+      "artist": "Little Feat",
+      "date": "2022-01-20",
+      "time": "20:00:00",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "venue": "The Charleston Music Hall",
+      "userId": 1,
+      "id": 39
+    },
+    {
+      "artist": "Bikini Kill",
+      "date": "2022-05-02",
+      "city": "Tucson",
+      "state": "Arizona",
+      "venue": "Rialto Theatre-Tucson",
+      "userId": 1,
+      "id": 40
     }
   ],
   "logs": [
@@ -95,6 +151,14 @@
       "name": "A throwback show",
       "userId": 1,
       "showId": 1
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "caption": "",
+      "userId": 1,
+      "imageUrl": ""
     }
   ]
 }

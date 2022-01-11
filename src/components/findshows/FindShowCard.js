@@ -1,4 +1,4 @@
-import React, {useContext } from "react"
+import React, { useContext } from "react"
 import "./FindShow.css"
 import { FindShowContext } from "./FindShowProvider"
 import { ShowContext } from "../shows/ShowProvider";
@@ -10,78 +10,98 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { CardGroup } from "react-bootstrap";
 
+
 export const FindShowCard = ({ show }) => {
 
- console.log(show)
+    console.log(show)
 
- const userId = parseInt(localStorage.getItem("showgoer_user"))
- show.userId = userId
+    const userId = parseInt(localStorage.getItem("showgoer_user"))
+    show.userId = userId
 
- //tried to format date
-//  moment('20010704T120854').format('MMMM Do YYYY, h:mm:ss a')
+    //Formatted date
+    const now = new Date(show.dates.start.localDate.replace(/-/g, '\/').replace(/T.+/, ''));
+    const dateString = now.toLocaleDateString({
+        weekday: "short",
+        year: "numeric",
+        month: "2-digit",
+        day: "numeric"
+    })
 
-const navigate = useNavigate()
+    //formatted time
+    // const time = new Date(show.dates.start.localTime.replace(/-/g, '\/').replace(/T.+/, ''));
+    // const timeString = time.toLocaleTimeString({
+    //     hour: "numeric",
+    //     hour12: true,
+    //     minute: "numeric"
+    // })
 
-const { addShow } = useContext(ShowContext)
+    const navigate = useNavigate()
 
-const handleClickSaveShow = (event) => {
-    event.preventDefault()
+    const { addShow } = useContext(ShowContext)
 
-    //declare new object
-    const formattedShow = {
-        artist: show.name,
-        date: show.dates.start.localDate,
-        city: show._embedded.venues[0].city.name,
-        state: show._embedded.venues[0].state.name,
-        venue: show._embedded.venues[0].name,
-        userId: parseInt(show.userId)
-        
+    const handleClickSaveShow = (event) => {
+        event.preventDefault()
+
+        //declare new object
+        const formattedShow = {
+            artist: show.name,
+            date: show.dates.start.localDate,
+            city: show._embedded.venues[0].city.name,
+            state: show._embedded.venues[0].state.name,
+            venue: show._embedded.venues[0].name,
+            userId: parseInt(show.userId)
+
+
+        }
+
+        addShow(formattedShow)
+
 
     }
 
-    addShow(formattedShow)
+    return (
 
-
-}
-
-    return ( 
-      
         <>
-        
-        <div className="find_show">
-       <Row>
-           <Col>
-            <Card>
-            
-          <Card.Img variant="top" src={show.images[0].url} />
-         
-          <Card.Title className="show_name"><a href={show.url} target={show.url}>{show.name}</a></Card.Title>
-         
-          <Card.Body>
-           
-         
-               <Card.Text>
-               
-           <p className="show_dates">{show.dates.start.localDate}</p>
-        <p className="show_times">{show.dates.start.localTime}</p>
-           <p className="show_venue">{show._embedded.venues[0].name}</p>
-           <p className="show_city">{show._embedded.venues[0].city?.name}, {show._embedded.venues[0].state?.name}</p>
-        
-         
-        </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-        <button onClick={handleClickSaveShow}
-        >Add To My Shows</button>
-        </Card.Footer>
-        </Card>
-        </Col>
-        </Row>
-               {/* //add button, click event  */}
+
+            <div className="find_show">
+                <Row>
+                    <Col>
+                        <Card>
+
+                            <Card.Img variant="top" src={show.images[0].url} />
+
+                            <Card.Title className="show_name"><a href={show.url} target={show.url}>{show.name}</a></Card.Title>
+
+                            <Card.Body>
+
+
+                                <Card.Text>
+
+                                    <p className="show_dates">{now.toLocaleDateString({
+                                        weekday: "short",
+                                        year: "numeric",
+                                        month: "2-digit",
+                                        day: "numeric"
+                                    })}</p>
+                                    <p className="show_times">{show.dates.start.localTime}</p>
+                                    <p className="show_venue">{show._embedded.venues[0].name}</p>
+                                    <p className="show_city">{show._embedded.venues[0].city?.name}, {show._embedded.venues[0].state?.name}</p>
+
+
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <button onClick={handleClickSaveShow}
+                                >Add To My Shows</button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                </Row>
+                {/* //add button, click event  */}
             </div>
-           
-            </>
+
+        </>
 
     )
-    
+
 }

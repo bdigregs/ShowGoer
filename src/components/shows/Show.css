@@ -62,8 +62,12 @@ button:hover {
   }
 
   .log {
+      display: flex;
+      justify-content: center;
       font-weight: bold;
       background-color: rgba(255, 255, 255, 0.705);
+      padding: 4%;
+      font-style: italic;
       
   }
 
@@ -168,12 +172,18 @@ button:hover {
     text-align: center;
 }
 
+.notes{
+    /* display: flex;
+    justify-content: center; */
+    font-weight: bold;
+}
+
 
 /* Form /////////// */
 label {
     color: white;
     font-weight: bold;
-    padding: 2%
+    margin: 2%
   
 
 }
@@ -181,7 +191,7 @@ label {
 .form_group {
     display: flex;
     justify-content: center;
-    margin: 1%;
+    margin: 2%;
 }
 
 .form-control{
