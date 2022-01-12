@@ -58,7 +58,7 @@ export const Register = (props) => {
             </dialog>
 
             <form className="register-form--login" onSubmit={handleRegister}>
-                <h1 className="please-register">Please Register for ShowGoer</h1>
+                <h1 className="please-register">Please register for ShowGoer</h1>
                 <fieldset>
                     <label htmlFor="firstName"> Name </label>
                     <input className="name-input" ref={firstName} type="text" name="firstName"  placeholder="Name" required autoFocus />

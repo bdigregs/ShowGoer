@@ -1,4 +1,4 @@
-#findshows-page { 
+.findshows-page { 
     background-image: url("https://i2.wp.com/www.thecountrynote.com/wp-content/uploads/2021/04/MountainStage_WV.jpg?fit=900%2C500&ssl=1");
     background-repeat: no-repeat, repeat;
     background-size: cover;
@@ -47,7 +47,8 @@
    max-height: 100%;
    height: 30vh;
    margin-bottom: 5%;
-   border: 5px solid rgb(255, 229, 144)
+   border: 5px solid rgb(255, 229, 144);
+   /* overflow: auto; */
 }
 
 .card-body {
@@ -67,8 +68,9 @@
 button {
     display: flex;
     justify-content: center;
+    text-align: center;
     transition-duration: 0.3s;
-    padding: 2%;
+    padding: 1%;
     
 }
 

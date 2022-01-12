@@ -105,7 +105,7 @@ return (
 
         <fieldset>
             <div className="form_group"> 
-            <label htmlFor="artist">Artist: </label>
+            <label className="artist-label" htmlFor="artist">Artist: </label>
             <input type="text" id="artist" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Artist name..." value={show.artist} />
             </div>
         </fieldset>

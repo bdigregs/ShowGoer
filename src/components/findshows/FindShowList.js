@@ -46,7 +46,7 @@ export const FindShowList = () => {
 
 
 
-        <div id="findshows-page">
+        <div className="findshows-page">
 
             <div className="findshow-sticky">
 

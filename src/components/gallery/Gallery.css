@@ -1,10 +1,30 @@
-.gallery-upload{
+.upload{
     display: flex;
-    margin-top: 8%
+    justify-content: center;
+    margin-top: 5%;
+
+    
+    
+}
+
+
+#choose-file-button{
+   
+    text-align: center;
+  
+    width:17vw;
+}
+
+
+#gallery-upload{
+    text-align: center;
+    
 }
 
 .gallery-header{
-    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
     color: white;
 }
 
@@ -15,4 +35,59 @@
     height: 100vh;
     background-attachment: fixed;
     overflow-y: scroll; 
+}
+
+
+.mb-1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+    
+}
+
+.gallery-pic{
+   
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: 50vh;
+    margin-bottom: 2%;
+    border: 5px solid rgb(255, 229, 144)
+}
+
+.gallery-card{
+  
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    width: 40vw;
+    height: 65vh;
+  padding: 1%;
+  margin: 1%;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+}
+
+.caption{
+    text-align: center;
+   
+}
+
+#delete-pic{
+    background-color: red;
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* //form */
+.instructions{
+    text-align: center;
+    color: white;
+    margin-top: 5%;
 }

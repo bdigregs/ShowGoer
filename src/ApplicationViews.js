@@ -10,6 +10,7 @@ import { FindShowProvider } from "./components/findshows/FindShowProvider"
 import { FindShowList } from "./components/findshows/FindShowList"
 import { Gallery } from "./components/gallery/GalleryProvider"
 import { GalleryList } from "./components/gallery/GalleryList"
+import { GalleryForm } from "./components/gallery/GalleryForm"
 
 export const ApplicationViews = () => {
     return (
@@ -23,6 +24,7 @@ export const ApplicationViews = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/myshows/*" element={<ShowList />} />
         <Route path="/gallery" element={<GalleryList />} />
+        <Route path="/gallery/create/*" element={<GalleryForm />} />
         <Route path="/myshows/create/*" element={<ShowForm />} />
         <Route path="/myshows/edit/:showId/*" element={<ShowForm />} />
         <Route path="/findshows/*" element={<FindShowList />} />

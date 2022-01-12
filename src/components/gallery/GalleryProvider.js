@@ -4,36 +4,20 @@ import "./Gallery.css"
 export const GalleryContext = createContext()
 
 export const Gallery = (props) => {
-    const [image, setImage] = useState("");
+    const [images, setImages] = useState([]);
     const [url, setUrl] = useState("");
 
-    const uploadImage = () => {
-        const data= new FormData()
-        data.append("file", image)
-        data.append("upload_preset", "tutorial")
-        data.append("cloud_name", "dtmiilpg4")
-        fetch("https://api.cloudinary.com/v1_1/dtmiilpg4", {
-
-        method: "POST",
-        body: data
-    })
-    .then(resp => resp.json())
-    .then(data => {
-        setUrl(data.url)
-    })
-    .catch(err => console.log(err))
-    }
 
 
-    const getPics = () => {
-        return fetch("https://api.cloudinary.com/v1_1/dtmiilpg4")
+    const getPics = (userId) => {
+        return fetch(`http://localhost:8088/gallery?userId=${userId}`)
         .then(res => res.json())
-        .then(setImage)
+        .then(setImages)
     }
 
 
     const addPic = picObj => {
-        return fetch("https://api.cloudinary.com/v1_1/dtmiilpg4/image/upload", {
+        return fetch("http://localhost:8088/gallery", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -44,10 +28,17 @@ export const Gallery = (props) => {
         .then(getPics)
 }
 
+const deletePic = picId => {
+    return fetch(`http://localhost:8088/gallery/${picId}`, {
+        method: "DELETE"
+    })
+    .then(getPics)
+}
+
 
 return ( 
     <GalleryContext.Provider value={{ 
-        image, setImage, url, setUrl, addPic, uploadImage, getPics
+        images, setImages, url, setUrl, addPic, getPics, deletePic
     }}>
         {props.children}
     </GalleryContext.Provider>
@@ -55,7 +46,7 @@ return (
 
 }
 
-export default Gallery;
+// export default Gallery;
 
 // const handleClickSavePic = (event) => {
 //     event.preventDefault()
@@ -71,7 +62,7 @@ export default Gallery;
 // return (
 //     <div>
 //         <div>
-//             <input type="file" onChange= {(e) => setImage(e.target.files[0])}></input>
+//             <input type="file" onChange= {(e) => setImages(e.target.files[0])}></input>
 //             <button className="gallery-upload" onClick={uploadImage}>Upload</button>
 //         </div>
 //         <div>

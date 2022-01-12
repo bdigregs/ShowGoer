@@ -25,26 +25,33 @@
     width: 50%;
 } */
 
-.nav-link{
-    justify-content: space-between
+.nav-item{
+    color: white;
+    justify-content: space-between;
+   
 }
+
+
+ 
 
 .navbar {
    
-    height: 10vh;
- 
+    height: 12vh;
+   
+  
     
 }
-
 
 
 .navbar-brand
 {
     position: relative;
     background: url("../../ShowGoerLogo.png");
-    width: 190px;
-    height: 10vh;
+    width: 220px;
+    height: 12vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
+

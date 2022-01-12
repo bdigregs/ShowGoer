@@ -42,8 +42,10 @@ export const ShowCard = ({ show }) => {
                             <p className="notes">Notes:</p>
                             <p className="log">{show.log}</p>
 
+                            <div className="button-container">
                             <button id="edit-button" onClick={() =>
                                 navigate(`/myshows/edit/${show.id}`)}>Edit show</button>
+                        </div>
                         </div>
                
                         {/* <Row className="upcoming-shows">

@@ -144,6 +144,15 @@
       "venue": "Rialto Theatre-Tucson",
       "log": "Badass",
       "userId": 1
+    },
+    {
+      "artist": "Departure - the Journey Tribute Band",
+      "date": "2022-01-22",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "venue": "The Charleston Music Hall",
+      "userId": 1,
+      "id": 41
     }
   ],
   "logs": [
@@ -156,18 +165,15 @@
   ],
   "gallery": [
     {
-      "id": 1,
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1641998356/ryxtatqos67mlhzqur1u.jpg",
       "caption": "",
       "userId": 1,
-      "imageUrl": ""
+      "id": 7
     },
     {
-      "userId": null,
-      "id": 2
-    },
-    {
-      "userId": null,
-      "id": 3
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1641998412/k3rxbulenimyqskdcrj1.png",
+      "userId": 1,
+      "id": 8
     }
   ]
 }

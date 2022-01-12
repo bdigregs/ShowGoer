@@ -10,30 +10,41 @@ import { Col } from "react-bootstrap";
 
 export const GalleryCard = ({ pic }) => {
 
+
     const navigate = useNavigate()
 
-    const {addPic} = useContext(GalleryContext)
+    const {addPic, deletePic} = useContext(GalleryContext)
+
+    const handleClickDelete = () => {
+        deletePic(pic.id)
+        .then(() => {
+            navigate("/gallery")
+        })
+    }
 
 
     return (
 
         <>
 
-            <div className="gallery-card">
+            <div className="gallery-group">
 
-                <Row>
-                    <Col>
-                        <Card>
-                            <Card.Img variant="top" src={pic.imageUrl} />
-                            <Card.Title className="picture caption">{pic.caption}</Card.Title>
 
+                <div className="gallery-card">
+                            <img className="gallery-pic" src={pic.imageUrl} />
+
+                            <h6 className="caption">{pic.caption}</h6>
+
+                            <div className="button-container">
+                        <button id="delete-pic" onClick={event => {
+                            event.preventDefault()
+                            handleClickDelete()
+                        }}>Delete</button>
+                            </div>
+                            </div>
 
     
 
-
-                        </Card>
-                    </Col>
-                </Row>
 
 
 
