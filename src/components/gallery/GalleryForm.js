@@ -36,6 +36,7 @@ export const GalleryForm = () => {
         addPic({
            
             imageUrl: data.url,
+            caption: data.caption,
             userId:  +localStorage.getItem("showgoer_user")
 
         })
@@ -55,17 +56,19 @@ export const GalleryForm = () => {
         const newPic = {...pic}
         newPic[event.target.id] = event.target.value
         setPic(newPic)
+        console.log(newPic)
     }
 
 
-    const deletePicture = () => {
-        deletePic(pic.id)
-        .then(() => {
-            navigate("/gallery")
-        })
-    }
+    // const deletePicture = () => {
+    //     deletePic(pic.id)
+    //     .then(() => {
+    //         navigate("/gallery")
+    //     })
+    // }
 
-    const cancelEdit = () => {
+    const cancelEdit = (e) => {
+        e.preventDefault()
         navigate("/gallery")
     }
 

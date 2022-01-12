@@ -27,7 +27,6 @@ export const GalleryCard = ({ pic }) => {
 
         <>
 
-            <div className="gallery-group">
 
 
                 <div className="gallery-card">
@@ -49,10 +48,7 @@ export const GalleryCard = ({ pic }) => {
 
 
 
-            </div>
-
-
-
+           
 
 
         </>

@@ -14,35 +14,36 @@ export const GalleryList = () => {
 
     const navigate=useNavigate()
 
-    const uploadImage = () => {
-        const data= new FormData()
-        data.append("file", image)
-        data.append("upload_preset", "showgoer")
-        data.append("cloud_name", "dtmiilpg4")
-        fetch("https://api.cloudinary.com/v1_1/dtmiilpg4/image/upload", {
+    // const uploadImage = () => {
+    //     const data= new FormData()
+    //     data.append("file", image)
+    //     data.append("upload_preset", "showgoer")
+    //     data.append("cloud_name", "dtmiilpg4")
+    //     fetch("https://api.cloudinary.com/v1_1/dtmiilpg4/image/upload", {
 
-        method: "POST",
-        body: data
-    })
-    .then(resp => resp.json())
-    .then(data => {
-        setUrl(data.url)
-        addPic({
+    //     method: "POST",
+    //     body: data
+    // })
+    // .then(resp => resp.json())
+    // .then(data => {
+    //     setUrl(data.url)
+    //     addPic({
            
-            imageUrl: data.url,
-            userId:  +localStorage.getItem("showgoer_user")
+    //         imageUrl: data.url,
+            
+    //         userId:  +localStorage.getItem("showgoer_user")
 
-        })
-    })
-    .catch(err => console.log(err))
-    }
+    //     })
+    // })
+    // .catch(err => console.log(err))
+    // }
 
 
-    const onChange = (e) => {
+    // const onChange = (e) => {
 
-        setImage(e.target.files[0])
+    //     setImage(e.target.files[0])
     
-    }
+    // }
 
     useEffect(() => {
 
@@ -57,8 +58,11 @@ return (
 
 <h1 className="gallery-header">Your Gallery</h1>
 
+    <div className="add-pic-button-container">
     <button id="add-pic" onClick={() => {
         navigate("/gallery/create")}}>Add Picture</button>
+        </div>
+        
         {/* <div className="upload">
           
             <button id="gallery-upload" onClick={uploadImage}>Upload</button>
@@ -75,12 +79,12 @@ return (
        
     
      <div className="mb-1">
-        <div>
+       
            
           {
               images.map((image) => <GalleryCard key={image.id} pic={image} /> )
           }
-        </div>
+      
         {/* <button onClick={handleClickSavePic}>Add Picture</button> */}
         {/* <img src={image.imageUrl} /> */}
 

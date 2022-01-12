@@ -165,15 +165,24 @@
   ],
   "gallery": [
     {
-      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1641998356/ryxtatqos67mlhzqur1u.jpg",
-      "caption": "",
-      "userId": 1,
-      "id": 7
-    },
-    {
       "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1641998412/k3rxbulenimyqskdcrj1.png",
       "userId": 1,
       "id": 8
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1641999124/dk8zrsjfzivu2by8xaof.png",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1641999274/foq4txxtrn02veuufzso.png",
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642000878/wa32p3kutyijnjmp0cj5.png",
+      "userId": 1,
+      "id": 11
     }
   ]
 }
