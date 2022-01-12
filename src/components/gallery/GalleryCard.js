@@ -3,9 +3,7 @@ import { GalleryContext } from "./GalleryProvider";
 import "./Gallery.css"
 import { useNavigate } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import InnerImageZoom from 'react-inner-image-zoom';
 
 
 export const GalleryCard = ({ pic }) => {

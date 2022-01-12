@@ -36,7 +36,7 @@ export const GalleryForm = () => {
         addPic({
            
             imageUrl: data.url,
-            caption: data.caption,
+            caption: pic.caption,
             userId:  +localStorage.getItem("showgoer_user")
 
         })
@@ -68,7 +68,6 @@ export const GalleryForm = () => {
     // }
 
     const cancelEdit = (e) => {
-        e.preventDefault()
         navigate("/gallery")
     }
 
@@ -117,13 +116,13 @@ export const GalleryForm = () => {
    <button id="choose-file-button">
        <input type="file" id="file-input" onChange= {onChange} name="ImageStyle"/>
    </button>
- 
+   </div>
      
-   
-      <label htmlFor="caption">Caption: </label>
+   <div className="caption-form">
+      <label id="caption-text" htmlFor="caption">Caption: </label>
             <input type="text" id="caption" onChange={handleControlledInputChange}  required className="form-control" placeholder="Write a caption..." value={pic.caption} />
+           
             </div>
-      
             <div className="form-buttons">
         
 
