@@ -80,7 +80,7 @@
 
     background-color: rgba(0, 0, 0, 0.692);
     color: white;
-    width: 40vw;
+    width: 45vw;
     height: 72vh;
   padding: 1%;
   margin: 1%;
@@ -94,11 +94,11 @@
 
 }
 
-img {
+.gallery-pic {
     transition:transform 0.25s ease;
 }
 
-img:hover {
+.gallery-pic:hover {
     -webkit-transform:scale(1.5); /* or some other value */
     transform:scale(1.5);
 }

@@ -19,7 +19,7 @@
       "city": "Charleston",
       "state": "West Virginia",
       "venue": "The Empty Glass",
-      "log": "A throwback show for sure!",
+      "log": "A throwback show for sure",
       "userId": 1
     },
     {
@@ -153,6 +153,15 @@
       "venue": "The Charleston Music Hall",
       "userId": 1,
       "id": 41
+    },
+    {
+      "artist": "Ted Nugent",
+      "date": "2022-07-23",
+      "city": "Saint Charles",
+      "state": "Illinois",
+      "venue": "Arcada Theatre",
+      "userId": 1,
+      "id": 42
     }
   ],
   "logs": [
@@ -187,6 +196,42 @@
       "caption": "Boulevard Tavern, Charleston WV, 2019",
       "userId": 1,
       "id": 25
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642011330/igisxxloxdyvfazxfnk3.jpg",
+      "caption": "Sleater-Kinney, Pittsburgh, 2019",
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642011348/rtswhizmlt6t52r8mbg2.jpg",
+      "caption": "Sleater-Kinney, Pittsburgh, 2019",
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642011379/sdwtpilfiwqxnmerliw3.jpg",
+      "caption": "Higher Ground Gala, Tucson AZ, 2018",
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642011407/esz1whadgquazkdn1wk8.jpg",
+      "caption": "Hotel Monte Vista, Flagstaff AZ, 2019",
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642011432/mkjrg0bd29rhfvo5rev9.jpg",
+      "caption": "Garage Show, Tucson AZ, 2018",
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642011491/s9hesobflv2f9f0zc2ff.jpg",
+      "caption": "Winterfest, Tucson AZ, 2018",
+      "userId": 1,
+      "id": 32
     }
   ]
 }
