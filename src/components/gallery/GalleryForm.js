@@ -67,7 +67,7 @@ export const GalleryForm = () => {
     //     })
     // }
 
-    const cancelEdit = (e) => {
+    const cancelEdit = (event) => {
         navigate("/gallery")
     }
 

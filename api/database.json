@@ -162,6 +162,24 @@
       "venue": "Arcada Theatre",
       "userId": 1,
       "id": 42
+    },
+    {
+      "artist": "Edwin McCain",
+      "date": "2022-02-12",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "venue": "The Charleston Music Hall",
+      "userId": 1,
+      "id": 43
+    },
+    {
+      "artist": "Brian Fallon",
+      "date": "2022-02-16",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "venue": "The Charleston Music Hall",
+      "userId": 1,
+      "id": 44
     }
   ],
   "logs": [
@@ -232,6 +250,12 @@
       "caption": "Winterfest, Tucson AZ, 2018",
       "userId": 1,
       "id": 32
+    },
+    {
+      "imageUrl": "http://res.cloudinary.com/dtmiilpg4/image/upload/v1642020494/tctqloc4p8um3fwpjbph.jpg",
+      "caption": "Tavern 2019",
+      "userId": 1,
+      "id": 33
     }
   ]
 }
